@@ -2,10 +2,14 @@
   "name": "viral",
   "description": "As simple as JS OO can be; in a tiny package",
   "version": "0.0.1",
-  "main": "src/viral.js",
+  "main": "viral.js",
   "scripts": {
     "test": "mocha",
-    "prepublish": "npm test"
+    "prepublish": "npm run build; npm test",
+    "build": "./node_modules/uglify-js/bin/uglifyjs viral.js > viral.min.js"
+  },
+  "devDependencies": {
+    "uglify-js": "2.2.5"
   },
   "repository": {
     "type": "git",

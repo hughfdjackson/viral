@@ -2,9 +2,11 @@
 
 viral is a tiny, pure prototypal OO library for javascript; taking the best parts of [boo](https://github.com/killdream/boo).
 
+[![browser support](http://ci.testling.com/hughfdjackson/immutable.png)](http://ci.testling.com/hughfdjackson/viral)
+
 ## Why
 
-JavaScript supports objects inheriting from prototypes; and making this an easy process is ridiculously simple.
+The most consistent, easiest way to OO in javascript is pure prototypally - and viral makes this a snap (and packs a tiny punch in the process).
 
 ## API
 
