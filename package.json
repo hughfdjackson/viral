@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "main": "viral.js",
   "scripts": {
-    "test": "mocha",
-    "prepublish": "npm run build; npm test",
+    "test": "npm run build; mocha",
+    "prepublish": "npm test",
     "build": "./node_modules/uglify-js/bin/uglifyjs viral.js > viral.min.js"
   },
   "devDependencies": {
@@ -34,8 +34,8 @@
       "safari/5.1"
     ],
     "harness": "mocha"
-    },
-    "keywords": ["oo", "prototypal", "prototype"],
+  },
+  "keywords": ["oo", "prototypal", "prototype"],
   "author": "hughfdjackson",
   "license": "BSD"
 }
