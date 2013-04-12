@@ -7,6 +7,7 @@ var isPrototypeOf = function(child, parent){
 	return child instanceof F
 }
 
+'use strict'
 
 describe('viral.Base', function(){
 
@@ -45,8 +46,9 @@ describe('viral.Base', function(){
 
 			var hugh = Person.make('hugh')
 
-			// a.equal(hugh.name, 'hugh')
-			a.equal(Person.name, undefined)
+			a.equal(hugh.name, 'hugh')
+
+			// a.equal(Person.name, undefined)
 			// a.ok(isPrototypeOf(hugh, Person))
 		})
 	})
