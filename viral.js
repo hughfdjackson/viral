@@ -21,7 +21,7 @@ void function(root){
 		},
 		make: function(){
 			var obj = create(this)
-			var ctor = this.constructor
+			var ctor = this['constructor']
 
 			if ( typeof ctor === 'function' ) ctor.apply(obj, arguments)
 
