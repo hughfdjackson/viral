@@ -9,7 +9,8 @@
     "build": "./node_modules/uglify-js/bin/uglifyjs viral.js > viral.min.js"
   },
   "devDependencies": {
-    "uglify-js": "2.2.5"
+    "uglify-js": "2.2.5",
+    "mocha": "1.8.1"
   },
   "repository": {
     "type": "git",
