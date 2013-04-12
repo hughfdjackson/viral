@@ -21,7 +21,7 @@ properties passed to .extend into that new object:
 var viral = require('viral')
 
 var Person = viral.Base.extend({
-	constructor: function(firstName, lastName){
+	init: function(firstName, lastName){
 		this.firstName = firstName
 		this.lastName = lastName
 	},
@@ -31,7 +31,7 @@ var Person = viral.Base.extend({
 
 ### viral.Base.make
 
-viral.base.make creates an object that inherits from viral.Base, and calls the constructor method
+viral.base.make creates an object that inherits from viral.Base, and calls the init method
 of this new object with any arguments you pass in.
 
 
