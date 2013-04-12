@@ -40,12 +40,15 @@ describe('viral.Base', function(){
 		})
 
 		it('should call constructor', function(){
+			var isCalled = false
+
 			var Person = viral.Base.extend({
-				constructor: function(name){ this.name = name }
+				constructor: function(name){ this.name = name; isCalled = true }
 			})
 
 			var hugh = Person.make('hugh')
 
+			a.equal(isCalled, true)
 			a.equal(hugh.name, undefined)
 			a.equal(Person.name, undefined)
 			a.ok(isPrototypeOf(hugh, Person))
