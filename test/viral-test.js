@@ -1,4 +1,4 @@
-var viral = require('../viral.min.js')
+var viral = require('../viral.js')
 var a = require('assert')
 
 var isPrototypeOf = function(child, parent){
