@@ -21,8 +21,7 @@ void function(root){
 		},
 		make: function(){
 			var obj = create(this)
-			if ( this.constructor ) this.constructor.apply(obj, arguments)
-
+			this.constructor.apply(obj, arguments)
 			return obj
 		}
 	}
