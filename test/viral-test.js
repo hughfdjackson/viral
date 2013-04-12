@@ -40,7 +40,7 @@ describe('viral.Base', function(){
 
 		it('should call constructor', function(){
 			var Person = viral.Base.extend({
-				constructor: function(name){ this.name = name }
+				'constructor': function(name){ this.name = name }
 			})
 
 			var hugh = Person.make('hugh')
