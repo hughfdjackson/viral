@@ -43,7 +43,7 @@ describe('viral.Base', function(){
 				constructor: function(name){ this.name = name }
 			})
 
-			// var hugh = Person.make('hugh')
+			var hugh = Person.make('hugh')
 
 			// a.equal(hugh.name, 'hugh')
 			// a.equal(Person.name, undefined)
