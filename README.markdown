@@ -2,7 +2,7 @@
 
 viral is a tiny, pure prototypal OO library for javascript; taking the best parts of [boo](https://github.com/killdream/boo).
 
-[![browser support](http://ci.testling.com/hughfdjackson/immutable.png)](http://ci.testling.com/hughfdjackson/viral)
+[![browser support](https://ci.testling.com/hughfdjackson/immutable.png)](https://ci.testling.com/hughfdjackson/viral)
 
 ## Why
 
