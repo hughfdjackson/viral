@@ -46,7 +46,7 @@ describe('viral.Base', function(){
 
 			var hugh = Person.make('hugh')
 
-			a.equal(hugh.name, 'hugh')
+			a.equal(hugh.name, undefined)
 			a.equal(Person.name, undefined)
 			a.ok(isPrototypeOf(hugh, Person))
 		})
