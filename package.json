@@ -1,16 +1,36 @@
 {
   "name": "viral",
-  "version": "0.1.0",
+  "description": "As simple as JS OO can be; in a tiny package",
+  "version": "0.0.1",
   "main": "src/viral.js",
   "scripts": {
-    "test": "mocha --ui qunit",
+    "test": "mocha",
     "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/hughfdjackson/viral.git"
   },
-  "keywords": [],
+  "testling": {
+    "files": "test/*-test.js",
+    "browsers": [
+      "iexplore/6.0",
+      "iexplore/7.0",
+      "iexplore/8.0",
+      "iexplore/9.0",
+      "iexplore/10.0",
+      "chrome/4.0",
+      "chrome/23.0",
+      "firefox/3.0",
+      "firefox/17.0",
+      "opera/10.0",
+      "opera/12.0",
+      "safari/5.0.5",
+      "safari/5.1"
+    ],
+    "harness": "mocha"
+    },
+    "keywords": ["oo", "prototypal", "prototype"],
   "author": "hughfdjackson",
   "license": "BSD"
 }
