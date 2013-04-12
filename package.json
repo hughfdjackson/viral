@@ -1,0 +1,16 @@
+{
+  "name": "viral",
+  "version": "0.1.0",
+  "main": "src/viral.js",
+  "scripts": {
+    "test": "mocha --ui qunit",
+    "prepublish": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hughfdjackson/viral.git"
+  },
+  "keywords": [],
+  "author": "hughfdjackson",
+  "license": "BSD"
+}
