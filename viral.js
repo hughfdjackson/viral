@@ -13,9 +13,6 @@ void function(root){
 		return to
 	}
 
-	var toArray = function(arrayLike){ return [].slice.call(arrayLike) }
-
-
 	var viral = {}
 
 	viral.Base = {
@@ -24,9 +21,9 @@ void function(root){
 		},
 		make: function(){
 			var obj = create(this)
-			var args = toArray(arguments)
+			var ctor = this.constructor
 
-			if ( typeof obj.constructor === 'function' ) obj.constructor.apply(obj, args)
+			if ( typeof ctor === 'function' ) ctor.apply(obj, arguments)
 
 			return obj
 		}
