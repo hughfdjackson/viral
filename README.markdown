@@ -6,7 +6,7 @@ Viral is a tiny, pure prototypal OO library for javascript; taking the best part
 
 ## Why
 
-The most consistent, easiest way to OO in javascript is pure prototypally - and Viral makes this a snap (and packs a tiny punch in the process).
+The most consistent, easiest way to OO in javascript is pure prototypally - and Viral makes this a snap (and packs a tiny punch in the process - < 0.5kb minified).
 
 ## API
 
