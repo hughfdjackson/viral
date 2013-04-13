@@ -13,9 +13,7 @@ void function(root){
 		return to
 	}
 
-	var viral = {}
-
-	viral.Base = {
+	var Viral = {
 		extend: function(props){
 			return extend(create(this), props)
 		},
@@ -27,8 +25,8 @@ void function(root){
 	}
 
 	// module dance
-	if ( typeof module !== 'undefined' && module.exports ) module.exports = viral
-	else if ( typeof define === 'function' && define.amd ) define(viral)
-	else                                                   root.viral = viral
+	if ( typeof module !== 'undefined' && module.exports ) module.exports = Viral
+	else if ( typeof define === 'function' && define.amd ) define(Viral)
+	else                                                   root.Viral = Viral
 
 }(this)
