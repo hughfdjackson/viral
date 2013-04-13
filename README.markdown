@@ -10,17 +10,17 @@ The most consistent, easiest way to OO in javascript is pure prototypally - and 
 
 ## API
 
-viral exposes a base object to inherit from - viral.Base.  It has two methods:
+Viral has two methods:
 
-### viral.Base.extend
+### Viral.extend
 
-viral.Base.extend creates an object that inherits from viral.Base, and copies any
+Viral.extend creates an object that inherits from viral.Base, and copies any
 properties passed to .extend into that new object:
 
 ```javascript
-var viral = require('viral')
+var Viral = require('viral')
 
-var Person = viral.Base.extend({
+var Person = Viral.extend({
 	init: function(firstName, lastName){
 		this.firstName = firstName
 		this.lastName = lastName
@@ -29,16 +29,16 @@ var Person = viral.Base.extend({
 })
 ```
 
-### viral.Base.make
+### Viral.make
 
-viral.base.make creates an object that inherits from viral.Base, and calls the init method
+viral.base.make creates an object that inherits from Viral, and calls the init method
 of this new object with any arguments you pass in.
 
 
 ```javascript
-// continuing with the Person example from `viral.Base.extend`
+// continuing with the Person example from `Viral.extend`
 
-var hugh = Person.make('hugh', 'jackson')   // Person inherits .make from viral.Base
+var hugh = Person.make('hugh', 'jackson')   // Person inherits .make from Viral
 
 hugh.fullName() //= 'hugh jackson'
 ```
@@ -50,9 +50,9 @@ hugh.fullName() //= 'hugh jackson'
 `npm install viral`, then require:
 
 ```javascript
-var viral = require('viral')
+var Viral = require('viral')
 
-// use `viral` here
+// use `Viral` here
 ```
 
 ### browser
@@ -77,7 +77,7 @@ include as a script tag:
 include as a script.  e.g., from the libs/ folder:
 
 ```javscript
-require(['libs/viral'], function(viral){
-	// use `viral` here
+require(['libs/viral'], function(Viral){
+	// use `Viral` here
 })
 ```

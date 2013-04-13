@@ -1,4 +1,4 @@
-var viral = require('../viral.js')
+var Viral = require('../viral.js')
 var a = require('assert')
 
 var isPrototypeOf = function(child, parent){
@@ -9,23 +9,23 @@ var isPrototypeOf = function(child, parent){
 
 'use strict'
 
-describe('viral.Base', function(){
+describe('Viral', function(){
 
 	describe('.extend', function(){
 
 		it('should make a new object, inheriting from the previous one', function(){
-			var Person = viral.Base.extend()
+			var Person = Viral.extend()
 
-			a.ok(isPrototypeOf(Person, viral.Base))
+			a.ok(isPrototypeOf(Person, Viral))
 		})
 
 		it('should mix in properties passed in', function(){
-			var Person = viral.Base.extend({
+			var Person = Viral.extend({
 				walks: function(){ return true }
 			})
 
 			a.equal(typeof Person.walks, 'function')
-			a.equal(viral.Base.walks, undefined)
+			a.equal(Viral.walks, undefined)
 		})
 
 	})
@@ -33,14 +33,14 @@ describe('viral.Base', function(){
 	describe('.make', function(){
 
 		it('should make a new instance of a prototype', function(){
-			var Person = viral.Base.extend({})
+			var Person = Viral.extend({})
 			var hugh = Person.make()
 
 			a.ok(isPrototypeOf(hugh, Person))
 		})
 
 		it('should call init function', function(){
-			var Person = viral.Base.extend({
+			var Person = Viral.extend({
 				init: function(name){ this.name = name; }
 			})
 
