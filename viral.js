@@ -13,13 +13,18 @@ void function(root){
 		return to
 	}
 
+	// Library object - a base object to be extended
 	var Viral = {
+
+		// create an inheriting object, with added or changed methods or properties
 		extend: function(props){
 			return extend(create(this), props)
 		},
+
+		// create a new instance of an object, calling an init method if available
 		make: function(){
 			var obj = create(this)
-			if ( typeof this.init === 'function' ) this.init.apply(obj, arguments)
+			if ( typeof obj.init === 'function' ) obj.init.apply(obj, arguments)
 			return obj
 		}
 	}
