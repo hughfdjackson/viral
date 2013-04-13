@@ -79,7 +79,7 @@ include as a script tag:
 
 include as a script.  e.g., from the libs/ folder:
 
-```javscript
+```javascript
 require(['libs/viral.min'], function(Viral){
 	// use `Viral` here
 })
