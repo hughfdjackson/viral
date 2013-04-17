@@ -32,6 +32,25 @@ var Coder = Person.extend({
 })
 ```
 
+Because Viral uses pure prototypal inheritance - objects inheriting directly from objects - Coder and Person are just objects like any other:
+
+```javascript
+console.log(Person)
+
+//  {
+//  	init: [Function],
+//  	fullName: [Function]
+//  }
+
+console.log(Coder)
+
+//  {
+//  	init: [Function],
+//  	fullName: [Function],
+//  	likesCode: true
+//  }
+```
+
 ### .make
 
 .make creates an object that inherits from the object on which it's called, and calls the init method
@@ -63,7 +82,7 @@ var Viral = require('viral')
 include as a script tag:
 
 ```html
-<doctype html>
+<!doctype html>
 <html>
 	<head></head>
 	<body>
