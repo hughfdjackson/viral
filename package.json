@@ -1,7 +1,7 @@
 {
   "name": "viral",
   "description": "As simple as JS OO can be; in a tiny package",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "viral.js",
   "scripts": {
     "test": "npm run build; mocha",
